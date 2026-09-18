@@ -1047,5 +1047,6 @@ $cotacoesFiltradas = filtrarCotacoes(
 
 </body>
 
-</html> 
+</html>
+
 
