@@ -340,7 +340,8 @@ $cotacoesFiltradas = filtrarCotacoes(
 
         body {
             font-family: Arial, sans-serif;
-            background: #ffebed
+            background: #FFEBED; /* Lavender Blush */
+            color: #3e828e; /* Dark Amethyst */
             margin: 0;
             padding: 20px;
         }
@@ -351,11 +352,12 @@ $cotacoesFiltradas = filtrarCotacoes(
         }
 
         header {
-            background: #fFebed;
-            color: white;
+            background: #F6B6B7; /* Powder Blush */
+            color: #3e828e; /* Dark Amethyst */
             padding: 25px;
             border-radius: 10px;
             margin-bottom: 20px;
+            box-shadow: 0 4px 12px #34145d14;
         }
 
         header h1 {
@@ -367,17 +369,21 @@ $cotacoesFiltradas = filtrarCotacoes(
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid #F6B6B7;
+            box-shadow: 0 2px 8px #27153d0f;
         }
 
         h2 {
-            color: #1e3799;
+            color: #3e828e; /* Dark Amethyst */
+            border-bottom: 2px solid #FFEBED;
+            padding-bottom: 8px;
+            margin-top: 0;
         }
 
         .filtros {
             display: flex;
             gap: 15px;
-            align-items: end;
+            align-items: flex-end;
         }
 
         .campo {
@@ -388,6 +394,7 @@ $cotacoesFiltradas = filtrarCotacoes(
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
+            color: #3e828e;
         }
 
         input,
@@ -395,9 +402,19 @@ $cotacoesFiltradas = filtrarCotacoes(
         textarea {
             width: 100%;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: 1px solid #F6B6B7; /* Powder Blush */
             border-radius: 5px;
             font-size: 15px;
+            color: #3e828e;
+            outline: none;
+            background-color: #ffffff;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #27153D;
+            box-shadow: 0 0 0 2px rgba(246, 182, 183, 0.5);
         }
 
         textarea {
@@ -406,24 +423,35 @@ $cotacoesFiltradas = filtrarCotacoes(
         }
 
         button {
-            background: #1e3799;
-            color: white;
+            background: #F6B6B7; /* Powder Blush */
+            color: #27153D; /* Dark Amethyst */
+            font-weight: bold;
             border: none;
             padding: 11px 20px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background 0.2s;
         }
 
         button:hover {
-            opacity: 0.9;
+            background: #b18384;
+            color: #FFEBED;
         }
 
         .limpar {
-            background: #777;
-            color: white;
+            background: #FFEBED; /* Lavender Blush */
+            color: #27153D;
+            font-weight: bold;
             text-decoration: none;
             padding: 11px 20px;
             border-radius: 5px;
+            border: 1px solid #F6B6B7;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .limpar:hover {
+            background: #f0c2c3;
         }
 
         .acoes {
@@ -443,23 +471,23 @@ $cotacoesFiltradas = filtrarCotacoes(
         }
 
         .tabela-cotacoes th {
-            background: #1e3799;
-            color: white;
+            background: #3e828e; /* Dark Amethyst */
+            color: #FFEBED; /* Lavender Blush */
             padding: 12px;
             text-align: left;
         }
 
         .tabela-cotacoes td {
             padding: 12px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #FFEBED;
         }
 
         .tabela-cotacoes tr:hover {
-            background: #f9f9f9;
+            background: #FFEBED; /* Lavender Blush */
         }
 
         .valor {
-            color: #27ae60;
+            color: #3e828e;
             font-weight: bold;
         }
 
@@ -474,17 +502,20 @@ $cotacoesFiltradas = filtrarCotacoes(
         }
 
         .erro {
-            color: #c0392b;
+            color: #b3002d;
             font-size: 14px;
             margin-top: 5px;
+            font-weight: bold;
         }
 
         .sucesso {
-            background: #dff0d8;
-            color: #27632a;
+            background: #FFEBED;
+            color: #297e72;
+            border: 1px solid #F6B6B7;
             padding: 12px;
             border-radius: 5px;
             margin-bottom: 15px;
+            font-weight: bold;
         }
 
         @media (max-width: 700px) {
@@ -1017,4 +1048,3 @@ $cotacoesFiltradas = filtrarCotacoes(
 </body>
 
 </html>
-
